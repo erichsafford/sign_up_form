@@ -133,6 +133,7 @@ div > h3 {
 }
 
 fieldset {
+    position: relative;
     display: grid;
     justify-content: space-around;
     grid-template-rows: repeat(3, 1fr);
@@ -141,27 +142,33 @@ fieldset {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
 }
 
+legend {
+    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-bottom: 1.5rem;
+}
+
 .input-label {
-    color: rgba(0, 0, 0);
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .text-box {
     height: 2rem;
-    border: 2px solid rgba(235, 235, 235, 70%);
-    border-radius: 5px;
+    border: 2px solid #E5E7EB;
+    border-radius: 10px;
 }
 
 .text-box:invalid {
     border: 2px solid red;
 }
 
-.text-box:valid {
-    border: 2px solid green;
-}
-
+.text-box:active,
 .text-box:focus {
-    border: blue;
-    box-shadow: 10px, 10px 10px blue;
+    outline: none;
+    border: 2px solid rgb(82, 82, 128);
+    box-shadow: 0px 0px 10px rgb(82, 82, 128);
 }
 
 .submit-group {
@@ -216,3 +223,12 @@ fieldset {
     grid-column-start: 2;
 }
 
+#pass1 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+#pass2 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
