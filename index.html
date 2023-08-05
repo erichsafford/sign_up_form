@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="side-splash">
+        <div class="company-title">
+            <img src="img/odin-lined.png" alt="The Odin Project logo" class="odin">
+            <hi class="odin-title">ODIN</hi>
+        </div>
+        <div>
+            <p class="photo-credit">Photo by <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        </div>
+    </div>
+    <div class="main-content-area">
+        <div class="intro-text-area">
+            <h3 class="text-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur illum minus amet obcaecati animi aliquid, nostrum quo quos nihil. Explicabo quasi facere eos unde cumque, voluptatibus aperiam ad mollitia dolor?</h3>
+            <h3 class="text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, harum?</h3>
+        </div>
+        <form method="get">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <div class="input_set" id="FN" style="float: left; margin-right: 20px;">
+                    <label class="input-label" for="first_name">FIRST NAME</label>
+                    <input class="text-box" type="text" name="first_name" id="first_name" required>
+                </div>
+                <div class="input_set" id="LN" style="float: left; margin-right: 20px;">
+                    <label class="input-label" for="last_name">LAST NAME</label>
+                    <input class="text-box" type="text" name="last_name" id="last_name" required>
+                </div>
+                <div class="input_set" id="mail" style="float: left; margin-right: 20px;">
+                    <label class="input-label" for="email">EMAIL</label>
+                    <input class="text-box" type="email" name="email" id="email" required>
+                </div>
+                <div class="input_set" id="PN" style="float: left; margin-right: 20px;">
+                    <label class="input-label" for="phone">PHONE NUMBER</label>
+                    <input class="text-box" type="tel" name="phone" id="phone">
+                </div>
+                <div class="input_set" id="pass1" style="float: left; margin-right: 20px;">
+                    <label class="input-label" for="password">PASSWORD</label>
+                    <input class="text-box" type="password" name="password" id="password" required>
+                </div>
+                <div class="input_set" id="pass2" style="float: left; margin-right: 20px;">
+                    <label class="input-label" for="confirm_password">CONFIRM PASSWORD</label>
+                    <input class="text-box" type="password" name="confirm_password" id="confirm_password" required>
+                </div>
+            </fieldset>
+            <div class="submit-group">
+                <button id="submit_button" type="submit">Create Account</button>
+                <p class="existing_user">Already have an account? <a href="example.com">Log in</a></p>
+            </div>
+        </form>
+    </div>
+
+
+
+</body>
+</html>
