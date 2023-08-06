@@ -231,14 +231,6 @@ legend {
     grid-column-start: 1;
 }
 
-#pass1:invalid::after {
-    content: "*password must be at least 7 characters long";
-    color: red;
-    position: absolute;
-    background-color: black;
-    z-index: 10;
-}
-
 #pass2 {
     grid-row-start: 3;
     grid-column-start: 2;
