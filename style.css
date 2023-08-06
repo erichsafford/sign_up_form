@@ -139,15 +139,18 @@ fieldset {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
     background-color: rgb(255, 255, 255);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1)
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    padding-block: 3rem;
 }
 
 legend {
     float: left;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 1rem;
+    left: 1rem;
     padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 .input-label {
@@ -226,6 +229,14 @@ legend {
 #pass1 {
     grid-row-start: 3;
     grid-column-start: 1;
+}
+
+#pass1:invalid::after {
+    content: "*password must be at least 7 characters long";
+    color: red;
+    position: absolute;
+    background-color: black;
+    z-index: 10;
 }
 
 #pass2 {
